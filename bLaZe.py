@@ -79,10 +79,10 @@ async def mentionall(event):
     ):
       is_admin = True
   if not is_admin:
-    return await event.reply("__Only admins can mention all!__")
+    return await event.reply("**ONLY ADMINS CAN MENTION ALL..!**🤨")
   
   if event.pattern_match.group(1) and event.is_reply:
-    return await event.reply("__Give me one argument!__")
+    return await event.reply("__GIVE ME ONE ARGUMENT..!__")
   elif event.pattern_match.group(1):
     mode = "text_on_cmd"
     msg = event.pattern_match.group(1)
@@ -92,7 +92,7 @@ async def mentionall(event):
     if msg == None:
         return await event.reply("__I can't mention members for older messages! (messages which are sent before I'm added to group)__")
   else:
-    return await event.reply("__Reply to a message or give me some text to mention others!__")
+    return await event.reply("__REPLY TO A MESSAGE OR GIVE ME SOME TEXT TO MENTION OTHERS!__")
   
   spam_chats.append(chat_id)
   usrnum = 0
@@ -119,21 +119,13 @@ async def mentionall(event):
 @client.on(events.NewMessage(pattern="^/cancel$"))
 async def cancel_spam(event):
   if not event.chat_id in spam_chats:
-    return await event.reply('__There is no proccess on going...__')
+    return await event.reply('THERE IS NO PROCCESS ON GOING...')
   else:
     try:
       spam_chats.remove(event.chat_id)
     except:
       pass
-    return await event.reply('__Stopped.__')
+    return await event.reply('**STOPPED...**')
 
 print(">> BLAZE MENTIONBOT STARTED <<")
 client.run_until_disconnected()
-
-@Client.on_message(
-    command(["^/tgu$", f"^/starthgh$"])
-)
-async def start_(client: Client, message: Message):
-    await message.reply_text(
-        f"""**☞ ✰Hᴇʟʟᴏ...""",
-
