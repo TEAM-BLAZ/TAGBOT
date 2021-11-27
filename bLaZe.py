@@ -20,7 +20,7 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "**ɪ'ᴍ ᴍᴇɴᴛɪᴏɴᴀʟʟ ʙᴏᴛ.....**\n**ɪ ᴄᴀɴ ᴍᴇɴᴛɪᴏɴ ᴀʟᴍᴏsᴛ ᴀʟʟ ᴍᴇᴍʙᴇʀs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ 👻...**\n**\n**ᴄʟɪᴄᴋ /help ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ..**",
+    "**𝐇𝐄𝐋𝐋𝐎 👋**\n\n**ɪ'ᴍ ᴍᴇɴᴛɪᴏɴᴀʟʟ ʙᴏᴛ.....**\n**ɪ ᴄᴀɴ ᴍᴇɴᴛɪᴏɴ ᴀʟᴍᴏsᴛ ᴀʟʟ ᴍᴇᴍʙᴇʀs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ 👻...**\n**\n**ᴄʟɪᴄᴋ /help ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ..",
     link_preview=False,
     buttons=(
       [
@@ -37,7 +37,7 @@ async def start(event):
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of MentionAllBot**\n\nCommand: /mentionall\n__You can use this command with text what you want to mention others.__\n`Example: /mentionall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [@Xmartperson](https://github.com/S780821) on Github"
+  helptext = "𝐇𝐞𝐥𝐩 𝐌𝐞𝐧𝐮 𝐎𝐟 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐁𝐨𝐭\n\n🕹 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬:-  /utag\n\n𝐄𝐱𝐚𝐦𝐩𝐥𝐞: `/utag Hello..!`\n\n**ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇssᴀɢᴇ...**🤗"
   await event.reply(
     helptext,
     link_preview=False,
@@ -53,11 +53,11 @@ async def help(event):
     )
   )
   
-@client.on(events.NewMessage(pattern="^/mentionall ?(.*)"))
+@client.on(events.NewMessage(pattern="^/utag ?(.*)"))
 async def mentionall(event):
   chat_id = event.chat_id
   if event.is_private:
-    return await event.reply("__This command can be use in groups and channels!__")
+    return await event.reply("**OO BHAI**🤨 **GROUP MAIN USE KRO ESE.. YHA NHI...**")
   
   is_admin = False
   try:
