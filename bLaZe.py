@@ -26,12 +26,13 @@ async def start(event):
     link_preview=False,
     buttons=(
       [
-        Button.url('➕Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘ➕', 'https://t.me/{BOT_USERNAME}?startgroup=true'),
-      ]
+      [ Button.url('➕Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘ➕', 'https://t.me/{BOT_USERNAME}?startgroup=true'),
+      ],
 
       [
         Button.url('❣️ Cʜᴀᴛ Zᴏɴᴇ', 'https://t.me/THE_SHOWRUNNERS'),
         Button.url('📢 Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ', 'https://t.me/THE_BLAZE_NETWORK')
+      ]
       ]
     )
   )
@@ -44,12 +45,13 @@ async def help(event):
     link_preview=False,
     buttons=(
       [
-        Button.url('➕Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘ➕', 'https://t.me/{BOT_USERNAME}?startgroup=true'),
-      ]
+       [ Button.url('➕Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘ➕', 'https://t.me/{BOT_USERNAME}?startgroup=true'),
+      ],
       [
         Button.url('❣️ Cʜᴀᴛ Zᴏɴᴇ', 'https://t.me/THE_SHOWRUNNERS'),
         Button.url('📢 Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ', 'https://t.me/THE_BLAZE_NETWORK')
       ]
+     ]
     )
   )
   
