@@ -1,5 +1,5 @@
 {
-    "name": "Mention All Member Bot",
+    "name": "MENTION ALL MEMBER BOT",
     "description": "A simple mention all for telegram.",
     "env": {
         "TOKEN": {
