@@ -49,7 +49,7 @@ async def help(event):
 async def mentionall(event):
   chat_id = event.chat_id
   if event.is_private:
-    return await event.respond("__This command can be use in groups and channels!__")
+    return await event.reply("__This command can be use in groups and channels!__")
   
   is_admin = False
   try:
