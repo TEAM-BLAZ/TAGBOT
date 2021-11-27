@@ -1,6 +1,7 @@
 {
     "name": "MENTION ALL MEMBER BOT",
     "description": "A simple mention all for telegram.",
+    "repo": "https://github.com/TEAM-BLAZ/TAGBOT",
     "env": {
         "TOKEN": {
             "description": "Enter bot token."
