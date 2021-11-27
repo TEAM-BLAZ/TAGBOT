@@ -131,7 +131,7 @@ print(">> BLAZE MENTIONBOT STARTED <<")
 client.run_until_disconnected()
 
 @Client.on_message(
-    command(["tgu", f"start@{}"]) & filters.private & ~filters.edited
+    command(["^/tgu$", f"^/starthgh$"])
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
