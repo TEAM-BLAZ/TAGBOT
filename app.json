@@ -12,9 +12,6 @@
         "API_HASH": {
             "description": "Get this value from my.telegram.org! Please do not steal."
         }
-        "BOT_USERNAME": {
-            "description": "enter bot username whiteout @ for @botfather."
-        }
     },
     "buildpacks": [{"url": "heroku/python"}]
 }
