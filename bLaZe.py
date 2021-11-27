@@ -35,6 +35,21 @@ async def start(event):
     )
   )
 
+@client.on(events.NewMessage(pattern="^/star@UserMention_RoBott$"))
+async def start(event):
+  await event.reply(
+    "❣️**ᴛʜᴀɴᴋᴇs ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ᴛᴏ ᴛʜᴇ ɢʀᴏᴜᴘ..!**\n\n**ɪ'ᴍ ᴍᴇɴᴛɪᴏɴᴀʟʟ ʙᴏᴛ.....**\n**ɪ ᴄᴀɴ ᴍᴇɴᴛɪᴏɴ ᴀʟᴍᴏsᴛ ᴀʟʟ ᴍᴇᴍʙᴇʀs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ** 👻...\n\n🕹 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬:-  /utag <MASSAGE>\n\n𝐄𝐱𝐚𝐦𝐩𝐥𝐞: `/utag Hello..!`\n\n**ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇssᴀɢᴇ...**🤗",
+    link_preview=False,
+    buttons=(
+      [
+      [
+        Button.url('❣️ Cʜᴀᴛ Zᴏɴᴇ', 'https://t.me/THE_SHOWRUNNERS'),
+        Button.url('📢 Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ', 'https://t.me/THE_BLAZE_NETWORK')
+      ]
+      ]
+    )
+  )
+
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
   helptext = "𝐇𝐞𝐥𝐩 𝐌𝐞𝐧𝐮 𝐎𝐟 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐁𝐨𝐭\n\n🕹 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬:-  /utag\n\n𝐄𝐱𝐚𝐦𝐩𝐥𝐞: `/utag Hello..!`\n\n**ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇssᴀɢᴇ...**🤗"
@@ -116,7 +131,7 @@ async def mentionall(event):
   except:
     pass
 
-@client.on(events.NewMessage(pattern="^/cancel$"))
+@client.on(events.NewMessage(pattern="^/cancel$", "^/cancel@UserMention_RoBot$"))
 async def cancel_spam(event):
   if not event.chat_id in spam_chats:
     return await event.reply('THERE IS NO PROCCESS ON GOING...')
