@@ -21,12 +21,16 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "__**I'm MentionAll Bot**, I can mention almost all members in group or channel 👻\nClick **/help** for more information__\n\n Follow [@Xmartperson](https://github.com/S780821) on Github",
+    "**ɪ'ᴍ ᴍᴇɴᴛɪᴏɴᴀʟʟ ʙᴏᴛ.....**\n**ɪ ᴄᴀɴ ᴍᴇɴᴛɪᴏɴ ᴀʟᴍᴏsᴛ ᴀʟʟ ᴍᴇᴍʙᴇʀs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ 👻...**\n**\n**ᴄʟɪᴄᴋ /help ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ..**",
     link_preview=False,
     buttons=(
       [
-        Button.url('✨Support', 'https://t.me/Xmarty_Supoort'),
-        Button.url('📦 Source', 'https://github.com/S780821/MentionAllMemberBot')
+        Button.url('➕Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘ➕', 'https://t.me/{BOT_USERNAME}?startgroup=true'),
+      ]
+
+      [
+        Button.url('❣️ Cʜᴀᴛ Zᴏɴᴇ', 'https://t.me/THE_SHOWRUNNERS'),
+        Button.url('📢 Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ', 'https://t.me/THE_BLAZE_NETWORK')
       ]
     )
   )
@@ -39,8 +43,11 @@ async def help(event):
     link_preview=False,
     buttons=(
       [
-        Button.url('✨Support', 'https://t.me/Xmarty_Support'),
-        Button.url('📦 Source', 'https://github.com/S780821/MentionAllMemberBot')
+        Button.url('➕Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘ➕', 'https://t.me/{BOT_USERNAME}?startgroup=true'),
+      ]
+      [
+        Button.url('❣️ Cʜᴀᴛ Zᴏɴᴇ', 'https://t.me/THE_SHOWRUNNERS'),
+        Button.url('📢 Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ', 'https://t.me/THE_BLAZE_NETWORK')
       ]
     )
   )
