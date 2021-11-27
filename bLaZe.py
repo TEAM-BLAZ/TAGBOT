@@ -5,7 +5,6 @@ from telethon.tl.types import ChannelParticipantAdmin
 from telethon.tl.types import ChannelParticipantCreator
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.errors import UserNotParticipantError
-from config import BOT_USERNAME
 logging.basicConfig(
     level=logging.INFO,
     format='%(name)s - [%(levelname)s] - %(message)s'
@@ -25,7 +24,7 @@ async def start(event):
     link_preview=False,
     buttons=(
       [
-      [ Button.url('➕Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘ➕', 'https://t.me/{BOT_USERNAME}?startgroup=true'),
+      [ Button.url('➕Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘ➕', 'https://t.me/Thbotbot?startgroup=true'),
       ],
 
       [
@@ -44,7 +43,7 @@ async def help(event):
     link_preview=False,
     buttons=(
       [
-       [ Button.url('➕Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘ➕', 'https://t.me/{BOT_USERNAME}?startgroup=true'),
+       [ Button.url('➕Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘ➕', 'https://t.me/Thbotbot?startgroup=true'),
       ],
       [
         Button.url('❣️ Cʜᴀᴛ Zᴏɴᴇ', 'https://t.me/THE_SHOWRUNNERS'),
