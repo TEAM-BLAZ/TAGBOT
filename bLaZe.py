@@ -84,7 +84,7 @@ async def mentionall(event):
     if msg == None:
         return await event.respond("__I can't mention members for older messages! (messages which are sent before I'm added to group)__")
   else:
-    return await event.respond("__Reply to a message or give me some text to mention others!__")
+    return await event.reply("__Reply to a message or give me some text to mention others!__")
   
   spam_chats.append(chat_id)
   usrnum = 0
