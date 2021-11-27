@@ -135,6 +135,5 @@ client.run_until_disconnected()
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""**☞ ✰Hᴇʟʟᴏ...{message.from_user.mention()} ❣**
-**☞ ✰Iᴍ.. [}](https://t.me/})**""",
+        f"""**☞ ✰Hᴇʟʟᴏ...""",
 
