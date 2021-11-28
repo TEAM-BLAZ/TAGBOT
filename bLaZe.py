@@ -119,7 +119,7 @@ async def mentionall(event):
     usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
     if usrnum == 5:
       if mode == "text_on_cmd":
-        txt = f"{usrtxt}\n\n{msg}"
+        txt = f"{msg}\n\n{usrtxt}"
         await client.send_message(chat_id, txt)
       elif mode == "text_on_reply":
         await msg.reply(usrtxt)
@@ -140,7 +140,7 @@ async def cancel_spam(event):
       spam_chats.remove(event.chat_id)
     except:
       pass
-    return await event.reply('**STOPPED...**')
+    return await event.reply('**❌STOPPED...**')
 
 
 
