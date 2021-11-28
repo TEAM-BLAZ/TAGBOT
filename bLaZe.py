@@ -131,7 +131,7 @@ async def mentionall(event):
   except:
     pass
 
-@client.on(events.NewMessage(pattern="^/cancel$", "^/cancel@UserMention_RoBot$"))
+@client.on(events.NewMessage(pattern="^/cancel$"))
 async def cancel_spam(event):
   if not event.chat_id in spam_chats:
     return await event.reply('THERE IS NO PROCCESS ON GOING...')
@@ -141,6 +141,8 @@ async def cancel_spam(event):
     except:
       pass
     return await event.reply('**STOPPED...**')
+
+
 
 print(">> BLAZE MENTIONBOT STARTED <<")
 client.run_until_disconnected()
