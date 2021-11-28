@@ -35,7 +35,7 @@ async def start(event):
     )
   )
 
-@client.on(events.NewMessage(pattern="^/start@UserMention_RoBott$"))
+@client.on(events.NewMessage(pattern="^/start@UserMention_RoBot$"))
 async def start(event):
   await event.reply(
     "❣️**ᴛʜᴀɴᴋᴇs ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ᴛᴏ ᴛʜᴇ ɢʀᴏᴜᴘ..!**\n\n**ɪ'ᴍ ᴍᴇɴᴛɪᴏɴᴀʟʟ ʙᴏᴛ.....**\n**ɪ ᴄᴀɴ ᴍᴇɴᴛɪᴏɴ ᴀʟᴍᴏsᴛ ᴀʟʟ ᴍᴇᴍʙᴇʀs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ** 👻...\n\n🕹 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬:-  /utag <MASSAGE>\n\n𝐄𝐱𝐚𝐦𝐩𝐥𝐞: `/utag Hello..!`\n\n**ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇssᴀɢᴇ...**🤗",
